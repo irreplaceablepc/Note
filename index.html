@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -174,4 +174,154 @@
 
 
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fff;
+        }
+        .top-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .top-nav .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .top-nav .right-section {
+            display: flex;
+            align-items: center;
+        }
+        .top-nav img, .top-nav .icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .top-nav input {
+            flex: 1;
+            max-width: 720px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f1f3f4;
+            margin: 0 20px;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 80px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .sidebar .icon {
+            width: 24px;
+            height: 24px;
+            margin: 16px 0;
+            cursor: pointer;
+        }
+        .sidebar .icon:first-child {
+            background-color: #feefc3;
+            border-radius: 50%;
+            padding: 12px;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .note-input {
+            width: 600px;
+            padding: 10px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .note-input input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .note-input .icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .empty-state {
+            text-align: center;
+            color: #80868b;
+            margin-top: 100px;
+        }
+        .empty-state img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="left-section">
+            <span class="icon">☰</span>
+            <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="Keep Logo">
+            <span>Keep</span>
+        </div>
+        <input type="text" placeholder="Search">
+        <div class="right-section">
+            <span class="icon">↻</span>
+            <span class="icon">☷</span>
+            <span class="icon">⚙</span>
+            <span class="icon">👤</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <span class="icon">💡</span>
+            <span class="icon">🔔</span>
+            <span class="icon">✏️</span>
+            <span class="icon">📥</span>
+            <span class="icon">🗑️</span>
+        </div>
+        <div class="content">
+            <div class="note-input">
+                <input type="text" placeholder="Take a note...">
+                <span class="icon">☑️</span>
+                <span class="icon">🖌️</span>
+                <span class="icon">🖼️</span>
+            </div>
+            <div class="empty-state">
+                <img src="https://www.gstatic.com/keep/icon_2020q4v2_128.png" alt="Empty State">
+                <p>Notes you add appear here</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
