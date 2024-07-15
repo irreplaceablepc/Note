@@ -103,63 +103,63 @@
 		</script>
   </head>
   <body>
-    <div class="flex h-screen bg-gray-100 text-gray-900">
+    <div class="flex h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
   
-  <aside class="w-16 bg-gray-200 flex flex-col items-center py-4 space-y-6 shadow-lg hidden">
-    <button class="p-3 rounded-full bg-gray-300 hover:bg-gray-400 transition">
+  <aside class="w-16 bg-secondary flex flex-col items-center py-4 space-y-6 shadow-lg hidden">
+    <button class="p-3 rounded-full bg-accent hover:bg-accent/80 transition">
       <img aria-hidden="true" alt="light-bulb" src="https://openui.fly.dev/openui/24x24.svg?text=💡" />
     </button>
-    <button class="p-3 rounded-full hover:bg-gray-300 transition">
+    <button class="p-3 rounded-full hover:bg-muted transition">
       <img aria-hidden="true" alt="bell" src="https://openui.fly.dev/openui/24x24.svg?text=🔔" />
     </button>
-    <button class="p-3 rounded-full hover:bg-gray-300 transition">
+    <button class="p-3 rounded-full hover:bg-muted transition">
       <img aria-hidden="true" alt="pencil" src="https://openui.fly.dev/openui/24x24.svg?text=✏️" />
     </button>
-    <button class="p-3 rounded-full hover:bg-gray-300 transition">
+    <button class="p-3 rounded-full hover:bg-muted transition">
       <img aria-hidden="true" alt="box" src="https://openui.fly.dev/openui/24x24.svg?text=🗂️" />
     </button>
-    <button class="p-3 rounded-full hover:bg-gray-300 transition">
+    <button class="p-3 rounded-full hover:bg-muted transition">
       <img aria-hidden="true" alt="trash-bin" src="https://openui.fly.dev/openui/24x24.svg?text=🗑️" />
     </button>
   </aside>
   
-  <main class="flex-1 flex flex-col bg-white text-gray-900 shadow-2xl rounded-tl-4xl overflow-hidden">
+  <main class="flex-1 flex flex-col bg-background text-foreground shadow-2xl rounded-tl-4xl overflow-hidden">
     
-    <div class="flex items-center justify-between py-4 px-8 bg-gray-100 shadow-lg rounded-tr-3xl">
+    <div class="flex items-center justify-between py-4 px-8 bg-card shadow-lg rounded-tr-3xl">
       <div class="flex items-center space-x-4">
-        <button class="p-2 rounded-full hover:bg-gray-300 transition" onclick="toggleAside()">
+        <button class="p-2 rounded-full hover:bg-muted transition" onclick="toggleAside()">
           <img aria-hidden="true" alt="menu" src="https://openui.fly.dev/openui/24x24.svg?text=☰" />
         </button>
         <span class="font-semibold text-xl">Keep</span>
       </div>
       <div class="flex-1 mx-6">
-        <input type="text" class="w-full p-2 rounded bg-gray-200 text-gray-900 shadow-inner" placeholder="Search" />
+        <input type="text" class="w-full p-2 rounded bg-input text-foreground shadow-inner" placeholder="Search" />
       </div>
       <div class="flex items-center space-x-4">
-        <button class="p-2 rounded-full hover:bg-gray-300 transition">
+        <button class="p-2 rounded-full hover:bg-muted transition">
           <img aria-hidden="true" alt="refresh" src="https://openui.fly.dev/openui/24x24.svg?text=🔄" />
         </button>
-        <button class="p-2 rounded-full hover:bg-gray-300 transition">
+        <button class="p-2 rounded-full hover:bg-muted transition">
           <img aria-hidden="true" alt="grid" src="https://openui.fly.dev/openui/24x24.svg?text=🔲" />
         </button>
-        <button class="p-2 rounded-full hover:bg-gray-300 transition">
+        <button class="p-2 rounded-full hover:bg-muted transition">
           <img aria-hidden="true" alt="settings" src="https://openui.fly.dev/openui/24x24.svg?text=⚙️" />
         </button>
-        <button class="p-2 rounded-full bg-gray-300 hover:bg-gray-400 transition shadow-lg">
+        <button class="p-2 rounded-full bg-muted hover:bg-muted/80 transition shadow-lg">
           <img aria-hidden="true" alt="user-avatar" src="https://openui.fly.dev/openui/24x24.svg?text=👤" />
         </button>
       </div>
     </div>
     
-    <div class="flex items-center mx-8 mt-6 p-4 rounded-lg shadow bg-gray-100 space-x-4">
-      <input type="text" class="flex-1 p-2 rounded bg-gray-200 text-gray-900 shadow-inner" placeholder="Take a note..." />
-      <button class="p-2 rounded-full hover:bg-gray-300 transition">
+    <div class="flex items-center mx-8 mt-6 p-4 rounded-lg shadow bg-gradient-to-r from-green-400 to-blue-500 space-x-4">
+      <input type="text" class="flex-1 p-2 rounded bg-input text-foreground shadow-inner" placeholder="Take a note..." />
+      <button class="p-2 rounded-full hover:bg-muted transition">
         <img aria-hidden="true" alt="checkmark" src="https://openui.fly.dev/openui/24x24.svg?text=✔️" />
       </button>
-      <button class="p-2 rounded-full hover:bg-gray-300 transition">
+      <button class="p-2 rounded-full hover:bg-muted transition">
         <img aria-hidden="true" alt="pen" src="https://openui.fly.dev/openui/24x24.svg?text=🖋️" />
       </button>
-      <button class="p-2 rounded-full hover:bg-gray-300 transition">
+      <button class="p-2 rounded-full hover:bg-muted transition">
         <img aria-hidden="true" alt="image" src="https://openui.fly.dev/openui/24x24.svg?text=🖼️" />
       </button>
     </div>
